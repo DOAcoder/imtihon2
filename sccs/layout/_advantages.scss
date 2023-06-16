@@ -1,0 +1,212 @@
+#advantages {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: #100e0e;
+      margin-bottom: 24px;
+    }
+    .list {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+      .item {
+        list-style-type: none;
+        width: 228px;
+        height: 500px;
+        padding: 24px 8px 32px 8px;
+        background: linear-gradient(180.04deg, #fe94a6 0.04%, #f2f2f2 65.84%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .li-it {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 16px;
+          }
+          .title-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .tit-im {
+              .mini-img {
+                display: none;
+              }
+              h3 {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 29px;
+                text-align: center;
+                color: #100e0e;
+                margin-bottom: 8px;
+              }
+              .tit {
+                width: 140px;
+              }
+            }
+
+            article {
+              width: 212px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12.5px;
+              line-height: 19px;
+              text-align: center;
+              color: #585656;
+            }
+          }
+        }
+
+        button {
+          padding: 17.5px 48.5px;
+          border: 1px solid #0071e4;
+          border-radius: 8px;
+          background-color: transparent;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          color: #0071e4;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #6fd91c;
+            color: #fff;
+            border: none;
+          }
+        }
+      }
+
+      .i2 {
+        background: linear-gradient(180.04deg, #e685ff 0.04%, #f2f2f2 65.84%);
+      }
+      .it3 {
+        background: linear-gradient(180.04deg, #7de9ff 0.04%, #f2f2f2 65.84%);
+      }
+      .it4 {
+        background: linear-gradient(180.04deg, #ffe685 0.04%, #f7f7f7 65.84%);
+      }
+      .it5 {
+        background: linear-gradient(180.04deg, #adffc1 0.04%, #f2f2f2 65.84%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #advantages {
+    .wrapper {
+      h2 {
+        font-size: 32px;
+        line-height: 38px;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+
+        .item {
+          width: 720px;
+          height: 158px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          background: #f9f9f9;
+
+          .li-it {
+            display: flex;
+            align-items: start;
+            flex-direction: row;
+            column-gap: 26px;
+
+            img {
+              width: 64px;
+              height: 64px;
+            }
+            .title-box {
+              align-items: start !important;
+
+              article {
+                width: 307px;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #advantages {
+    .wrapper {
+      h2 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .list {
+        .item {
+          width: 288px;
+          height: 150px;
+          padding: 16px 23px 16px 16px;
+
+          .li-it {
+            .img {
+              display: none;
+            }
+
+            .title-box {
+              .tit-im {
+                display: flex;
+                align-items: start;
+                column-gap: 8px;
+                .mini-img {
+                  display: block;
+                  width: 32px;
+                  height: 32px;
+                }
+                h3 {
+                  font-size: 20px;
+                  line-height: 24px;
+                  text-align: start;
+                }
+                .tit {
+                  width: 213px;
+                }
+              }
+
+              article {
+                width: 249px;
+                font-size: 14px;
+                line-height: 16px;
+              }
+            }
+          }
+          button {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}

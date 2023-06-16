@@ -1,0 +1,99 @@
+#max {
+  height: 400px;
+  background-color: #000000;
+  background-image: url("../../assets/image/max/design_startframe__cffzwjeyro2q_large\ \(1\)\ 2\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: calc(50% - 465px) calc(50% + 150px);
+ 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 84px;
+    margin-left: 345px;
+
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 67px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    button {
+      padding: 18.5px 39.5px;
+      background: #0071e4;
+      border-radius: 8px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #6fd91c;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #max {
+    height: 225px;
+    background-size: 110px;
+    background-position: calc(50% - 292px) calc(50% + 30px);
+    .wrapper {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-left: 190px;
+      h2 {
+        font-size: 32px;
+        line-height: 38px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  #max {
+    height: 151px;
+    background-size: 65px;
+    background-position: calc(50% - 106px) calc(50% + 5px);
+    .wrapper {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      margin-left: 90px;
+      h2 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 19px; 
+        margin-bottom: 16px; 
+      }
+      button{
+        padding: 10.5px 36px;
+      }
+    }
+  }
+}
